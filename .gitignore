@@ -22,3 +22,10 @@ logs
 .env
 .env.*
 !.env.example
+
+# Temp dirs
+tmp
+temp
+
+# AI artifacts
+mcps
