@@ -1,0 +1,9 @@
+{
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.requireConfig": true,
+	"vue.format.enable": false,
+	"[vue]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
+}

@@ -5,5 +5,5 @@
 </template>
 
 <script setup lang="ts">
-const currYear = new Date().getFullYear()
+const currYear = new Date().getFullYear();
 </script>

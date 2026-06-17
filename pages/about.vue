@@ -6,6 +6,6 @@
 </template>
 
 <script setup lang="ts">
-const title = 'О нас'
-useHead({ title })
+const title = 'О нас';
+useHead({ title });
 </script>

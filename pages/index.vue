@@ -7,6 +7,6 @@
 
 <script setup lang="ts">
 // Здесь можно писать логику
-const title = 'Привет 👋'
-useHead({ title })
+const title = 'Привет';
+useHead({ title });
 </script>

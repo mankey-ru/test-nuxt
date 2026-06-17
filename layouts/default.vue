@@ -1,6 +1,6 @@
 <template>
 	<div class="layout-default container">
-		<AppHeader class="my-3"/>
+		<AppHeader class="my-3" />
 
 		<main class="my-3">
 			<NuxtPage />
@@ -11,12 +11,11 @@
 </template>
 
 <script setup lang="ts">
-import AppFooter from '~/components/layout/AppFooter.vue'
-import AppHeader from '~/components/layout/AppHeader.vue'
+import AppFooter from '~/components/layout/AppFooter.vue';
+import AppHeader from '~/components/layout/AppHeader.vue';
 
 const route = useRoute();
-console.log('Current route:', route)
-
+console.log('Current route:', route);
 </script>
 
 <style scoped>
