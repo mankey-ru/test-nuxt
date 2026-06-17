@@ -1,12 +1,22 @@
 <template>
-	<div class="layout-default">
+	<div class="layout-default container">
 		<!-- Общая шапка -->
 		<header>
-			<h1>Мой Nuxt 3 проект</h1>
-			<nav>
-				<NuxtLink to="/">Главная</NuxtLink>
-				<NuxtLink to="/about">О нас</NuxtLink>
-			</nav>
+			<div class="row">
+				<div class="col-auto">
+					<h1>Мой Nuxt 3 проект</h1>
+				</div>
+				<div class="col">
+					<nav>
+						<NuxtLink to="/">Главная</NuxtLink>
+						<NuxtLink to="/about">О нас</NuxtLink>
+					</nav>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-3">11</div>
+				<div class="col-7">22</div>
+			</div>
 		</header>
 		<!-- <AppHeader /> -->
 

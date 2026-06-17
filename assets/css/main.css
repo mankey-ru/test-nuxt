@@ -1,0 +1,54 @@
+/* @tailwind utilities; */
+
+@import 'tailwindcss';
+
+/* ==================== Bootstrap-like 12-column Flex Grid ==================== */
+
+@utility row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: calc(var(--spacing) * -2);
+	margin-right: calc(var(--spacing) * -2);
+	--col-num: 12;
+}
+@utility col {
+	flex: 1 0 0%;
+	padding-left: calc(var(--spacing) * 2);
+	padding-right: calc(var(--spacing) * 2);
+}
+@utility col-auto {
+	flex: 0 0 auto;
+	width: auto;
+	max-width: none;
+	padding-left: calc(var(--spacing) * 2);
+	padding-right: calc(var(--spacing) * 2);
+}
+@utility col-* {
+	flex: 0 0 calc((100% / var(--col-num, 12)) * var(--value));
+	max-width: calc((100% / var(--col-num, 12)) * var(--value));
+	padding-left: calc(var(--spacing) * 2);
+	padding-right: calc(var(--spacing) * 2);
+}
+@utility container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: calc(var(--spacing) * 4);
+	padding-right: calc(var(--spacing) * 4);
+
+	@media (min-width: 640px) {
+		max-width: 640px;
+	} /* sm */
+	@media (min-width: 768px) {
+		max-width: 768px;
+	} /* md */
+	@media (min-width: 1024px) {
+		max-width: 1024px;
+	} /* lg */
+	@media (min-width: 1280px) {
+		max-width: 1280px;
+	} /* xl */
+	@media (min-width: 1536px) {
+		max-width: 1536px;
+	} /* 2xl */
+}
