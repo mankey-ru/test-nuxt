@@ -1,18 +1,12 @@
 <template>
 	<div>
-		<h1>Привет, Nuxt 3! 👋</h1>
+		<UiHead1 :title="title" />
 		<p>Это главная страница (pages/index.vue)</p>
 	</div>
 </template>
 
 <script setup lang="ts">
 // Здесь можно писать логику
-const title = 'Мой Nuxt 3 проект'
+const title = 'Привет 👋'
 useHead({ title })
 </script>
-
-<style scoped>
-h1 {
-	color: #00dc82;
-}
-</style>

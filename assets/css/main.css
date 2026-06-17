@@ -2,3 +2,7 @@
 
 @import 'tailwindcss';
 @import './grid.css';
+
+.router-link-active {
+	font-weight: bold;
+}

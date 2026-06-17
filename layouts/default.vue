@@ -1,44 +1,22 @@
 <template>
 	<div class="layout-default container">
-		<!-- Общая шапка -->
-		<header>
-			<div class="row">
-				<div class="col-auto">
-					<h1>Мой Nuxt 3 проект</h1>
-				</div>
-				<div class="col">
-					<nav>
-						<NuxtLink to="/">Главная</NuxtLink>
-						<NuxtLink to="/about">О нас</NuxtLink>
-					</nav>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-3">11</div>
-				<div class="col-7">22</div>
-			</div>
-		</header>
-		<!-- <AppHeader /> -->
+		<AppHeader class="my-3"/>
 
-		<!-- Основное содержимое страницы -->
-		<main>
+		<main class="my-3">
 			<NuxtPage />
 		</main>
 
-		<!-- Общий футер -->
-		<footer>
-			<p>&copy; {{ currYear }} Мой Nuxt 3 проект</p>
-		</footer>
-		<!-- <AppFooter /> -->
+		<AppFooter class="my-3" />
 	</div>
 </template>
 
 <script setup lang="ts">
-// Здесь можно добавить логику макета
-// Например: useHead, composables, обработка состояний
+import AppFooter from '~/components/layout/AppFooter.vue'
+import AppHeader from '~/components/layout/AppHeader.vue'
+
 const route = useRoute();
-console.log(route);
-const currYear = new Date().getFullYear();
+console.log('Current route:', route)
+
 </script>
 
 <style scoped>
